@@ -10,48 +10,59 @@ hint::hint()
 	switch (game->levelb)
 	{
 	case 0:
+		//ƒqƒ“ƒg1
 		spriteRender.Init("Assets/sprite/hint1.DDS", 1920.0f, 1080.0f);
 		break;
 	case 1:
 		if (game->levela < 2)
 		{
+			//ƒqƒ“ƒg2
 			spriteRender.Init("Assets/sprite/hint2.DDS", 1920.0f, 1080.0f);
 		}
 		else if (game->levelc < 3)
 		{
+			//ƒqƒ“ƒg3
 			spriteRender.Init("Assets/sprite/hint3.DDS", 1920.0f, 1080.0f);
 		}
 		else if (game->leveld < 2)
 		{
+			//ƒqƒ“ƒg4
 			spriteRender.Init("Assets/sprite/hint4.DDS", 1920.0f, 1080.0f);
 		}
 		else
 		{
+			//ƒqƒ“ƒg5
 			spriteRender.Init("Assets/sprite/hint5.DDS", 1920.0f, 1080.0f);
 		}
 		break;
 	case 2:
+		//ƒqƒ“ƒg6
 		spriteRender.Init("Assets/sprite/hint6.DDS", 1920.0f, 1080.0f);
 		break;
 	case 3:
 		if (game->levelc < 3)
 		{
+			//ƒqƒ“ƒg3
 			spriteRender.Init("Assets/sprite/hint3.DDS", 1920.0f, 1080.0f);
 		}
 		else if (game->leveld < 2)
 		{
+			//ƒqƒ“ƒg4
 			spriteRender.Init("Assets/sprite/hint4.DDS", 1920.0f, 1080.0f);
 		}
 		else if (game->leveld < 4)
 		{
+			//ƒqƒ“ƒg7
 			spriteRender.Init("Assets/sprite/hint7.DDS", 1920.0f, 1080.0f);
 		}
 		else
 		{
+			//ƒqƒ“ƒg8
 			spriteRender.Init("Assets/sprite/hint8.DDS", 1920.0f, 1080.0f);
 		}
 		break;
 	case 4:
+		//ƒqƒ“ƒg9
 		spriteRender.Init("Assets/sprite/hint9.DDS", 1920.0f, 1080.0f);
 		break;
 	}
