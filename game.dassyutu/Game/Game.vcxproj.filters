@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="system">
+      <UniqueIdentifier>{22dd8095-74f9-46df-81a1-36675a040b1f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="system\system.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Title.cpp" />
+    <ClCompile Include="sousa.cpp" />
+    <ClCompile Include="room1.cpp" />
+    <ClCompile Include="room2.cpp" />
+    <ClCompile Include="room3.cpp" />
+    <ClCompile Include="room4.cpp" />
+    <ClCompile Include="Qbutton.cpp" />
+    <ClCompile Include="Qice.cpp" />
+    <ClCompile Include="Qbookshelf.cpp" />
+    <ClCompile Include="Qbooks.cpp" />
+    <ClCompile Include="Qclock.cpp" />
+    <ClCompile Include="Qmoon.cpp" />
+    <ClCompile Include="Qtarget.cpp" />
+    <ClCompile Include="Qjewel.cpp" />
+    <ClCompile Include="Qsafe.cpp" />
+    <ClCompile Include="Qkeybox.cpp" />
+    <ClCompile Include="Qshelf.cpp" />
+    <ClCompile Include="Qdoor.cpp" />
+    <ClCompile Include="Qtableclock.cpp" />
+    <ClCompile Include="Qwindow.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="cursor.cpp" />
+    <ClCompile Include="Qkeyboxdial1.cpp" />
+    <ClCompile Include="Qkeyboxdial2.cpp" />
+    <ClCompile Include="Qkeyboxdial3.cpp" />
+    <ClCompile Include="Qkeyboxdial4.cpp" />
+    <ClCompile Include="Qkeyboxdial5.cpp" />
+    <ClCompile Include="Qkeyboxdial6.cpp" />
+    <ClCompile Include="Qsafejedial1.cpp" />
+    <ClCompile Include="Qsafejedial2.cpp" />
+    <ClCompile Include="Qsafejedial3.cpp" />
+    <ClCompile Include="Qsafetadial1.cpp" />
+    <ClCompile Include="Qsafetadial2.cpp" />
+    <ClCompile Include="Qsafetadial3.cpp" />
+    <ClCompile Include="Qdoordial1.cpp" />
+    <ClCompile Include="Qdoordial2.cpp" />
+    <ClCompile Include="Qdoordial3.cpp" />
+    <ClCompile Include="Qdoordial4.cpp" />
+    <ClCompile Include="Qdoordial5.cpp" />
+    <ClCompile Include="Qdoordial6.cpp" />
+    <ClCompile Include="Qdoordial7.cpp" />
+    <ClCompile Include="Clear.cpp" />
+    <ClCompile Include="sousa2.cpp" />
+    <ClCompile Include="sousa3.cpp" />
+    <ClCompile Include="aftersousa.cpp" />
+    <ClCompile Include="hint.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="system\system.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Title.h" />
+    <ClInclude Include="sousa.h" />
+    <ClInclude Include="room1.h" />
+    <ClInclude Include="room2.h" />
+    <ClInclude Include="room3.h" />
+    <ClInclude Include="room4.h" />
+    <ClInclude Include="Qbutton.h" />
+    <ClInclude Include="Qice.h" />
+    <ClInclude Include="Qbookshelf.h" />
+    <ClInclude Include="Qbooks.h" />
+    <ClInclude Include="Qclock.h" />
+    <ClInclude Include="Qmoon.h" />
+    <ClInclude Include="Qtarget.h" />
+    <ClInclude Include="Qjewel.h" />
+    <ClInclude Include="Qsafe.h" />
+    <ClInclude Include="Qkeybox.h" />
+    <ClInclude Include="Qshelf.h" />
+    <ClInclude Include="Qdoor.h" />
+    <ClInclude Include="Qtableclock.h" />
+    <ClInclude Include="Qwindow.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="cursor.h" />
+    <ClInclude Include="Qkeyboxdial1.h" />
+    <ClInclude Include="Qkeyboxdial2.h" />
+    <ClInclude Include="Qkeyboxdial3.h" />
+    <ClInclude Include="Qkeyboxdial4.h" />
+    <ClInclude Include="Qkeyboxdial5.h" />
+    <ClInclude Include="Qkeyboxdial6.h" />
+    <ClInclude Include="Qsafejedial1.h" />
+    <ClInclude Include="Qsafejedial2.h" />
+    <ClInclude Include="Qsafejedial3.h" />
+    <ClInclude Include="Qsafetadial1.h" />
+    <ClInclude Include="Qsafetadial2.h" />
+    <ClInclude Include="Qsafetadial3.h" />
+    <ClInclude Include="Qdoordial1.h" />
+    <ClInclude Include="Qdoordial2.h" />
+    <ClInclude Include="Qdoordial3.h" />
+    <ClInclude Include="Qdoordial4.h" />
+    <ClInclude Include="Qdoordial5.h" />
+    <ClInclude Include="Qdoordial6.h" />
+    <ClInclude Include="Qdoordial7.h" />
+    <ClInclude Include="Clear.h" />
+    <ClInclude Include="sousa2.h" />
+    <ClInclude Include="sousa3.h" />
+    <ClInclude Include="aftersousa.h" />
+    <ClInclude Include="hint.h" />
+  </ItemGroup>
+</Project>

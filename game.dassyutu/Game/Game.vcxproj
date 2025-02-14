@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Preview|Win32">
+      <Configuration>Preview</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Preview|x64">
+      <Configuration>Preview</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{282445E9-421F-46C0-9165-6C90D7C7EFC4}</ProjectGuid>
+    <RootNamespace>Game</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Preview|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(ProjectDir)../k2Engine/;$(ProjectDir)../k2EngineLow/;$(ProjectDir)../k2EngineLow/ExEngine/;$(ProjectDir)../k2EngineLow/ExEngine/bulletPhysics/src;$(ProjectDir)../k2EngineLow/ExEngine/effekseer/install_msvc2019/include/Effekseer;$(ProjectDir)../k2EngineLow/ExEngine/effekseer/install_msvc2019/include/EffekseerRendererDX12;$(ProjectDir)..\k2EngineLow\ExEngine\Photon;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)../exlib/$(Platform)\$(Configuration)\;$(ProjectDir)..\k2EngineLow\ExEngine\DirectXTK\Bin\Desktop_2019_Win10\$(Platform)\$(Configuration)\;$(ProjectDir)..\k2EngineLow\ExEngine\effekseer/install_msvc2019/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(ProjectDir)../k2Engine/;$(ProjectDir)../k2EngineLow/;$(ProjectDir)../k2EngineLow/ExEngine/;$(ProjectDir)../k2EngineLow/ExEngine/bulletPhysics/src;$(ProjectDir)../k2EngineLow/ExEngine/effekseer/install_msvc2019/include/Effekseer;$(ProjectDir)../k2EngineLow/ExEngine/effekseer/install_msvc2019/include/EffekseerRendererDX12;$(ProjectDir)..\k2EngineLow\ExEngine\Photon;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)../exlib/$(Platform)\$(Configuration)\;$(ProjectDir)..\k2EngineLow\ExEngine\DirectXTK\Bin\Desktop_2019_Win10\$(Platform)\$(Configuration)\;$(ProjectDir)..\k2EngineLow\ExEngine\effekseer/install_msvc2019/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(ProjectDir)../k2Engine/;$(ProjectDir)../k2EngineLow/;$(ProjectDir)../k2EngineLow/ExEngine/;$(ProjectDir)../k2EngineLow/ExEngine/bulletPhysics/src;$(ProjectDir)../k2EngineLow/ExEngine/effekseer/install_msvc2019/include/Effekseer;$(ProjectDir)../k2EngineLow/ExEngine/effekseer/install_msvc2019/include/EffekseerRendererDX12;$(ProjectDir)..\k2EngineLow\ExEngine\Photon;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)../exlib/$(Platform)\$(Configuration)\;$(ProjectDir)..\k2EngineLow\ExEngine\DirectXTK\Bin\Desktop_2019_Win10\$(Platform)\$(Configuration)\;$(ProjectDir)..\k2EngineLow\ExEngine\effekseer/install_msvc2019/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>K2_DEBUG;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(Platform)\$(Configuration)\$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;k2Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4006 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(Platform)\$(Configuration)\$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;k2Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Preview|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>K2_DEBUG;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(Platform)\$(Configuration)\$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;k2Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="aftersousa.cpp" />
+    <ClCompile Include="Clear.cpp" />
+    <ClCompile Include="cursor.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="hint.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Qbooks.cpp" />
+    <ClCompile Include="Qbookshelf.cpp" />
+    <ClCompile Include="Qbutton.cpp" />
+    <ClCompile Include="Qclock.cpp" />
+    <ClCompile Include="Qdoor.cpp" />
+    <ClCompile Include="Qdoordial1.cpp" />
+    <ClCompile Include="Qdoordial2.cpp" />
+    <ClCompile Include="Qdoordial3.cpp" />
+    <ClCompile Include="Qdoordial4.cpp" />
+    <ClCompile Include="Qdoordial5.cpp" />
+    <ClCompile Include="Qdoordial6.cpp" />
+    <ClCompile Include="Qdoordial7.cpp" />
+    <ClCompile Include="Qice.cpp" />
+    <ClCompile Include="Qjewel.cpp" />
+    <ClCompile Include="Qkeybox.cpp" />
+    <ClCompile Include="Qkeyboxdial1.cpp" />
+    <ClCompile Include="Qkeyboxdial2.cpp" />
+    <ClCompile Include="Qkeyboxdial3.cpp" />
+    <ClCompile Include="Qkeyboxdial4.cpp" />
+    <ClCompile Include="Qkeyboxdial5.cpp" />
+    <ClCompile Include="Qkeyboxdial6.cpp" />
+    <ClCompile Include="Qmoon.cpp" />
+    <ClCompile Include="Qsafe.cpp" />
+    <ClCompile Include="Qsafejedial1.cpp" />
+    <ClCompile Include="Qsafejedial2.cpp" />
+    <ClCompile Include="Qsafejedial3.cpp" />
+    <ClCompile Include="Qsafetadial1.cpp" />
+    <ClCompile Include="Qsafetadial2.cpp" />
+    <ClCompile Include="Qsafetadial3.cpp" />
+    <ClCompile Include="Qshelf.cpp" />
+    <ClCompile Include="Qtableclock.cpp" />
+    <ClCompile Include="Qtarget.cpp" />
+    <ClCompile Include="Qwindow.cpp" />
+    <ClCompile Include="room1.cpp" />
+    <ClCompile Include="room2.cpp" />
+    <ClCompile Include="room3.cpp" />
+    <ClCompile Include="room4.cpp" />
+    <ClCompile Include="sousa.cpp" />
+    <ClCompile Include="sousa2.cpp" />
+    <ClCompile Include="sousa3.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Preview|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="system\system.cpp" />
+    <ClCompile Include="Title.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aftersousa.h" />
+    <ClInclude Include="Clear.h" />
+    <ClInclude Include="cursor.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="hint.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="Qbooks.h" />
+    <ClInclude Include="Qbookshelf.h" />
+    <ClInclude Include="Qbutton.h" />
+    <ClInclude Include="Qclock.h" />
+    <ClInclude Include="Qdoor.h" />
+    <ClInclude Include="Qdoordial1.h" />
+    <ClInclude Include="Qdoordial2.h" />
+    <ClInclude Include="Qdoordial3.h" />
+    <ClInclude Include="Qdoordial4.h" />
+    <ClInclude Include="Qdoordial5.h" />
+    <ClInclude Include="Qdoordial6.h" />
+    <ClInclude Include="Qdoordial7.h" />
+    <ClInclude Include="Qice.h" />
+    <ClInclude Include="Qjewel.h" />
+    <ClInclude Include="Qkeybox.h" />
+    <ClInclude Include="Qkeyboxdial1.h" />
+    <ClInclude Include="Qkeyboxdial2.h" />
+    <ClInclude Include="Qkeyboxdial3.h" />
+    <ClInclude Include="Qkeyboxdial4.h" />
+    <ClInclude Include="Qkeyboxdial5.h" />
+    <ClInclude Include="Qkeyboxdial6.h" />
+    <ClInclude Include="Qmoon.h" />
+    <ClInclude Include="Qsafe.h" />
+    <ClInclude Include="Qsafejedial1.h" />
+    <ClInclude Include="Qsafejedial2.h" />
+    <ClInclude Include="Qsafejedial3.h" />
+    <ClInclude Include="Qsafetadial1.h" />
+    <ClInclude Include="Qsafetadial2.h" />
+    <ClInclude Include="Qsafetadial3.h" />
+    <ClInclude Include="Qshelf.h" />
+    <ClInclude Include="Qtableclock.h" />
+    <ClInclude Include="Qtarget.h" />
+    <ClInclude Include="Qwindow.h" />
+    <ClInclude Include="room1.h" />
+    <ClInclude Include="room2.h" />
+    <ClInclude Include="room3.h" />
+    <ClInclude Include="room4.h" />
+    <ClInclude Include="sousa.h" />
+    <ClInclude Include="sousa2.h" />
+    <ClInclude Include="sousa3.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="system\system.h" />
+    <ClInclude Include="Title.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
